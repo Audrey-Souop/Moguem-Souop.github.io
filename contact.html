@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moguem — PhD Student | Electrical and Computer Engineering</title>
+  <meta name="description" content="Portfolio Moguem, PhD Student | Electrical and Computer Engineering. Gainesville, University of Florida, United States." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.2rem;
+      margin-top: 1.5rem;
+    }
+    @media (max-width: 600px) { .contact-grid { grid-template-columns: 1fr; } }
+
+    .contact-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.4rem 1.6rem;
+      display: flex;
+      flex-direction: column;
+      gap: .4rem;
+    }
+    .contact-card .label { font-size: .75rem; color: var(--accent); font-weight: 600; text-transform: uppercase; letter-spacing: .08em; }
+    .contact-card .value { font-size: .95rem; color: var(--text); }
+    .contact-card .value a { color: var(--accent); }
+    .contact-card .value a:hover { text-decoration: underline; }
+
+    .availability {
+      margin-top: 2rem;
+      background: var(--accent-dim);
+      border: 1px solid var(--accent);
+      border-radius: var(--radius);
+      padding: 1.2rem 1.6rem;
+      color: var(--text);
+      font-size: .9rem;
+      max-width: 520px;
+    }
+    .availability strong { color: var(--accent); }
+  </style>
+</head>
+<body>
+
+<!-- ══ NAVIGATION ══════════════════════════════════════════ -->
+<nav>
+  <a href="https://audrey-souop.github.io/" class="nav-brand">Audrey Cyrielle Moguem Souop </a>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="background.html">Background</a></li>
+    <li><a href="projets.html">Projects</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="container">
+<section style="padding-top:4rem;">
+  <p class="section-label">Contact</p>
+  <h2>Let’s Work Together</h2>
+  <p style="color:var(--muted);max-width:580px;margin-bottom:2rem;">
+    I am currently seeking internship opportunities in the United States, where I can
+    contribute to impactful projects in hardware design, embedded systems, and robotics.
+    Feel free to reach out via email or connect with me on LinkedIn.
+  </p>
+
+  <div class="availability">
+    <strong>Availability</strong> · Open to Summer / Fall Internship Opportunities (U.S.)<br>
+    PhD. student at the University of Florida<br>
+    Open to <strong>on-site</strong>, <strong>hybrid</strong>, or <strong>remote</strong> roles within the United States.
+  </div>
+
+  <div class="contact-grid" style="margin-top:2rem;">
+
+    <div class="contact-card">
+      <span class="label">Email</span>
+      <span class="value">
+        <a href="mailto:audreycyriell.mo@ufl.edu">audreycyriell.mo@ufl.edu</a>
+      </span>
+    </div>
+
+    <div class="contact-card">
+      <span class="label">LinkedIn</span>
+      <span class="value">
+        <a href="https://www.linkedin.com/in/cyrielle-souop/" target="_blank" rel="noopener">
+          linkedin.com/in/cyrielle-souop
+        </a>
+      </span>
+    </div>
+
+    <div class="contact-card">
+      <span class="label">GitHub</span>
+      <span class="value">
+        <a href="https://github.com/cyriellesouop/" target="_blank" rel="noopener">
+          github.com/cyriellesouop
+        </a>
+      </span>
+    </div>
+
+    <div class="contact-card">
+      <span class="label">Location</span>
+      <span class="value">Gainesville, Florida, United States</span>
+    </div>
+
+  </div>
+
+  <div style="margin-top:2.5rem;">
+    <a href="assets/pdf/Audrey_Moguem_Resume.pdf" class="btn btn-primary" target="_blank" rel="noopener">
+      ↓ Download my CV (PDF)
+    </a>
+  </div>
+
+</section>
+</div>
+
+<!-- ══ FOOTER ═══════════════════════════════════════════════ -->
+<footer>
+  <p>Audrey Cyrielle Moguem Souop · PhD Student | Electrical and Computer Engineering · University of Florida, United States</p>
+  <p style="margin-top:.4rem;">
+    <a href="https://github.com/cyriellesouop/" target="_blank" rel="noopener">GitHub</a> ·
+    <a href="https://www.linkedin.com/in/cyrielle-souop/" target="_blank" rel="noopener">LinkedIn</a> ·
+    <a href="contact.html">Contact</a>
+  </p>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

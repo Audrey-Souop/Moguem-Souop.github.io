@@ -1,0 +1,23 @@
+# ============================================================
+# GitHub Pages — Jekyll config
+# ============================================================
+title: "Moguem Souop Audrey Cyrielle  — PhD Student | Electrical and Computer Engineering | University of Florida Specializing in Hardware Acceleration for Robotics and Computer Vision"
+description: "Portfolio professionnel : PhD Student | Electrical and Computer Engineering."
+url: "https://Moguem-Souop.github.io"
+baseurl: ""
+
+
+# Remove unuseful files from the build
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - .git/
+
+# SEO / Social
+author: "Audrey Souop"
+lang: fr
+
+# No template Jekyll 
+theme: ~

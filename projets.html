@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moguem — PhD Student | Electrical and Computer Engineering</title>
+  <meta name="description" content="Portfolio Moguem, PhD Student | Electrical and Computer Engineering. Gainesville, University of Florida, United States." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<!-- ══ NAVIGATION ══════════════════════════════════════════ -->
+<nav>
+  <a href="https://audrey-souop.github.io/" class="nav-brand">Audrey Cyrielle Moguem Souop </a>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Accueil</a></li>
+    <li><a href="background.html">Background</a></li>
+    <li><a href="projets.html">Projets</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="container">
+<section style="padding-top:4rem;">
+  <p class="section-label">Portfolio</p>
+  <h2>Projects & Experiences</h2>
+  <p style="color:var(--muted);max-width:620px;margin-bottom:2.5rem;">
+    An Overview of the Projects I have worked on.
+  </p>
+
+  <div class="exp-list">
+
+    <!-- SPSA -->
+    <div class="exp-card">
+      <h3>FPGA-Accelerated Map Inflation for Robotics</h3>
+      <div class="exp-meta">Spring 2026 · FPGA Acceleration · Robotics Navigation</div>
+      <p>
+        Designed a specialized hardware accelerator to speed up map inflation, a key
+        operation in robotic navigation for collision avoidance in dynamic environments.
+        The project focused on achieving deterministic, low-latency performance for
+        safe human-robot collaboration.
+      </p>
+      <ul>
+        <li>Designed a Sparse Patch Systolic Array (SPSA) architecture for deterministic map inflation</li>
+        <li>Built a hybrid pipeline combining software-based detection with hardware-based inflation logic</li>
+        <li>Implemented and optimized the RTL using AMD Vivado and Vitis</li>
+        <li>Mapped multiplication operations to DSP primitives to reduce LUT utilization</li>
+        <li>Achieved high-frequency and low-power implementation on Spartan-7 FPGA</li>
+      </ul>
+      <div class="tags">
+        <span class="tag">Verilog</span><span class="tag">FPGA</span><span class="tag">Vivado</span>
+        <span class="tag">Vitis</span><span class="tag">Spartan-7</span><span class="tag">Robotics</span>
+        <span class="tag">RTL Design</span>
+      </div>
+    </div>
+  
+    <!-- 1D Convolution -->
+    <div class="exp-card">
+      <h3>FPGA-Accelerated 1-D Time-Domain Convolution</h3>
+      <div class="exp-meta">Fall 2025 · ZedBoard · Hardware-Software Co-Design</div>
+      <p>
+        Designed and implemented a custom hardware accelerator for high-speed 1-D convolution
+        on FPGA, using parallel computation and efficient buffering to outperform a
+        microprocessor-based solution.
+      </p>
+      <ul>
+        <li>Developed a parallel datapath with 128 multipliers and an adder tree</li>
+        <li>Built a custom DMA-like interface for streaming data from emulated DRAM</li>
+        <li>Implemented clock domain crossing techniques between PS and PL</li>
+        <li>Designed a sliding-window buffer to sustain high-throughput data delivery</li>
+        <li>Integrated the accelerator into a custom SoC with memory-mapped control logic</li>
+      </ul>
+      <div class="tags">
+        <span class="tag">Verilog</span><span class="tag">ZedBoard</span><span class="tag">HW/SW Co-Design</span>
+        <span class="tag">CDC</span><span class="tag">DMA</span><span class="tag">SoC</span>
+        <span class="tag">Timing Analysis</span>
+      </div>
+    </div>
+  
+    <!-- Synthetic Dataset -->
+    <div class="exp-card">
+      <h3>Synthetic Dataset Generation for Robotic Arms</h3>
+      <div class="exp-meta">Spring–Summer 2025 · ROS 2 · Gazebo · Computer Vision</div>
+      <p>
+        Built an automated framework for generating synthetic datasets for robotic arms,
+        enabling fast collection of annotated training data for machine learning and
+        pose estimation tasks without manual labeling.
+      </p>
+      <ul>
+        <li>Developed a ROS 2 and Gazebo pipeline that takes a robot URDF as input</li>
+        <li>Automated the collection of joint states, translations, and rotations during simulation</li>
+        <li>Captured synchronized image streams from multiple camera viewpoints</li>
+        <li>Created an automatic labeling mechanism linking each image to precise joint configurations</li>
+        <li>Produced annotated and unannotated datasets ready for learning pipelines</li>
+      </ul>
+      <div class="tags">
+        <span class="tag">ROS 2</span><span class="tag">Gazebo</span><span class="tag">Python</span>
+        <span class="tag">URDF</span><span class="tag">Dataset Generation</span><span class="tag">Robotics</span>
+        <span class="tag">Pose Estimation</span>
+      </div>
+    </div>
+  
+    <!-- Handwritten Digit -->
+    <div class="exp-card">
+      <h3>Handwritten Digit Object Detection & Classification</h3>
+      <div class="exp-meta">Fall 2024 · Computer Vision · Deep Learning</div>
+      <p>
+        Conducted a comparative study on handwritten digit detection and recognition,
+        evaluating deep learning and classical approaches for document digitization tasks.
+      </p>
+      <ul>
+        <li>Prepared and cleaned a dataset of 4,190 student-generated images</li>
+        <li>Applied augmentation techniques to expand the training dataset to over 7,000 samples</li>
+        <li>Compared YOLOv7 against a custom Multilayer Perceptron (MLP)</li>
+        <li>Used OpenCV to preprocess images through denoising and contour extraction</li>
+        <li>Evaluated model accuracy using IoU and mAP performance metrics</li>
+      </ul>
+      <div class="tags">
+        <span class="tag">YOLOv7</span><span class="tag">PyTorch</span><span class="tag">OpenCV</span>
+        <span class="tag">Computer Vision</span><span class="tag">MLP</span><span class="tag">Python</span>
+        <span class="tag">Data Augmentation</span>
+      </div>
+    </div>
+
+    <div class="exp-card">
+      <h3>CAMERTRONIX</h3>
+      <div class="exp-meta">Feb 2023 – Apr 2024 · Computer Vision · Edge AI</div>
+      <ul>
+        <li>Optimized and deployed YOLOv7/YOLOv5 on Raspberry Pi 3/4 with a focus on latency, size, and accuracy</li>
+        <li>Implemented scene tracking using DeepSORT and centroid tracking methods</li>
+        <li>Calibrated GoPano 360° images and stitched two fisheye videos into panoramic views using OpenCV and FFmpeg</li>
+      </ul>
+      <div class="tags">
+        <span class="tag">YOLOv5-v7</span><span class="tag">Raspberry Pi</span>
+        <span class="tag">OpenCV</span><span class="tag">FFmpeg</span><span class="tag">Python</span>
+      </div>
+    </div>
+    
+    <div class="exp-card">
+      <h3>ZIYOUMA</h3>
+      <div class="exp-meta">Mar 2022 – Jun 2022 · Mobile Development</div>
+      <ul>
+        <li>Designed UML diagrams for the application</li>
+        <li>Integrated geolocation and mapping APIs</li>
+        <li>Developed the user dashboard using Flutter 2.8</li>
+        <li>Used Firebase for backend storage and authentication via phone number and email</li>
+      </ul>
+      <div class="tags">
+        <span class="tag">Flutter</span><span class="tag">Dart</span>
+        <span class="tag">Firebase</span><span class="tag">REST API</span><span class="tag">Trello</span>
+      </div>
+    </div>
+  
+  </div>
+</section>
+</div>
+
+<!-- ══ FOOTER ═══════════════════════════════════════════════ -->
+<footer>
+  <p>Audrey Cyrielle Moguem Souop · PhD Student | Electrical and Computer Engineering · University of Florida, United States</p>
+  <p style="margin-top:.4rem;">
+    <a href="https://github.com/cyriellesouop/" target="_blank" rel="noopener">GitHub</a> ·
+    <a href="https://www.linkedin.com/in/cyrielle-souop/" target="_blank" rel="noopener">LinkedIn</a> ·
+    <a href="contact.html">Contact</a>
+  </p>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
